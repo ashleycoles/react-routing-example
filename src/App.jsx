@@ -6,6 +6,7 @@ import NotFoundPage from "./components/NotFoundPage/NotFoundPage"
 import Nav from "./components/Nav/Nav"
 import Footer from "./components/Footer/Footer"
 import SingleBookPage from "./components/SingleBookPage/SingleBookPage"
+import AddBookPage from "./components/AddBookPage/AddBookPage"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           /book/2
           And all of those URLs will loud the SingleBookPage */}
           <Route path="/book/:id" element={<SingleBookPage />} />
+          <Route path="/add-book" element={<AddBookPage />} />
 
           {/* Creating a 404 (page not found) route - this will display if none of the above
           routes match the request */}
